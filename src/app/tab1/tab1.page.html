@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+</ion-header>
+<ion-content>
+  <div id="container">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>servicios</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content class="ion-padding">
+        <ion-list class="ion-padding" [routerLink]="['/']">Inicio</ion-list>
+        <ion-list class="ion-padding" [routerLink]="['/servicios']">lavado</ion-list>
+      <ion-list class="ion-padding" [routerLink]="['/servicios']">secado</ion-list>
+      <ion-list class="ion-padding" [routerLink]="['/servicios']">planchado</ion-list>
+      </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title></ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </div>
+  </div>
+  <br><br><br><br>
+
+
+<!-- Contenido -->
+<div>
+<div id="container">
+  <ion-card>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipPrLy7hxmmkOa_C_oblNvqdJ4ym8budkh16xp9U=w1080-h608-p-no-v0" />
+    <ion-card-content>
+      <h1>Bienvenido</h1>
+      <ion-button [routerLink]="['/servicios']" fill="clear">Reservar cita</ion-button>
+    </ion-card-content>
+  </ion-card>
+</div>
+</div>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Mapa</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="map"></div>
+</ion-content>

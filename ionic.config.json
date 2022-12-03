@@ -1,0 +1,7 @@
+{
+  "name": "maprutas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

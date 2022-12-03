@@ -1,0 +1,22 @@
+<ion-content>
+  <div id="container">
+    <ion-card>
+      <img alt="Silhouette of mountains" style="width: 10%;" src="assets/img/icono.png" />
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label>Usuario</ion-label>
+            <ion-input type="text" placeholder="User"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>Contraseña</ion-label>
+            <ion-input type="password" Placeholder="Password"></ion-input>
+          </ion-item>
+        </ion-list>
+        <ion-button [routerLink]="['/index']" fill="clear">Iniciar sesión</ion-button>
+        <ion-button fill="clear">Registrarse</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

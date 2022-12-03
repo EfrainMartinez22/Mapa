@@ -1,0 +1,62 @@
+<ion-content>
+  <div id="container">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>servicios</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content class="ion-padding">
+        <ion-list class="ion-padding" [routerLink]="['/']">Inicio</ion-list>
+        <ion-list class="ion-padding" [routerLink]="['/servicios']">lavado</ion-list>
+      <ion-list class="ion-padding" [routerLink]="['/servicios']">secado</ion-list>
+      <ion-list class="ion-padding" [routerLink]="['/servicios']">planchado</ion-list>
+      </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title></ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div id="container">
+    <ion-card>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label>Domicilio</ion-label>
+            <ion-input type="text" placeholder="Domicilio"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Colonia</ion-label>
+            <ion-input type="text" placeholder="Colonia"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Codigo postal</ion-label>
+            <ion-input type="text" placeholder="CP"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Servicios</ion-label>
+            <ion-select [multiple]="true">
+              <ion-select-option value="Lavado">Lavado</ion-select-option>
+              <ion-select-option value="Secado">Secado</ion-select-option>
+              <ion-select-option value="Planchado">Planchado</ion-select-option>
+              <ion-select-option value="Otro">Otro</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-datetime minuteValues="0,15,30,45" dayValues="5,10,15,20,25,30"></ion-datetime>
+
+        </ion-list>
+        <ion-button [routerLink]="['/index']" fill="clear">Enviar solicitud</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
